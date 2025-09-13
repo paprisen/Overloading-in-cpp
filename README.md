@@ -99,6 +99,26 @@ This program demonstrates constructor overloading using a Sales class. One const
 
 ## Program 3: Function Overloading
 
+### Logic:
+
+This program demonstrates function overloading in C++, where the same function name Concatenate is defined with different parameter types. One version of the function takes two strings and concatenates them, while the other takes two characters and returns their combination as a string. The compiler determines which function to call based on the type of arguments passed. Function overloading allows performing similar operations on different data types using the same function name, improving code readability and reusability. This showcases compile-time polymorphism in C++.
+
+## Algorithm:
+
+1. Start the program.
+
+2. Define a class Concat with two functions named Concatenate: --Function 1: Takes two string arguments and returns their concatenation. --Function 2: Takes two char      arguments, converts them to a string, and returns the result.
+
+3. In the main() function, create an object c of class Concat.
+
+4. Call c.Concatenate("Papri", "Sen") calls the string version of the function.
+
+5. Call c.Concatenate('P', 'S') calls the character version of the function.
+
+6. Display the results of both function calls.
+
+7. End
+
 ## Program 4: Operator Overloading 
 
 ### Logic:
