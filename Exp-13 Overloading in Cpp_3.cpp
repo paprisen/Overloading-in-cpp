@@ -2,39 +2,37 @@
 // 24070123070
 // A3
 
-#include <iostream>
+#include<iostream>
+#include<string>
 using namespace std;
-class Shapes{
-public:
-    double area(double s,int){
-        double Area_S = s*s;
-        return Area_S;
+
+class Concat{
+    public:
+
+    string Concatenate(string a, string b){
+        return a+b;
     }
-    double area(double r){
-        double Area_C = 3.14*r*r;
-        return Area_C;
-    }
-    double area(double l, double b){
-        double Area_R = l*b;
-        return Area_R;
-    }
-    double area(double b, double h,int){
-        double Area_T = 0.5*b*h;
-        return Area_T;
+
+    string Concatenate(char a, char b){
+        string init = "";
+        init += a;
+        init += b;
+        return init;
     }
 };
-int main() {
-    Shapes a,b,c,d;
-    cout << "Area of Sq: "<<a.area(3.3,0)<<endl;
-    cout << "Area of Circle: "<<b.area(3.3)<<endl;
-    cout << "Area of Rectangle: "<<c.area(1.2,2.2)<<endl;
-    cout << "Area of Triangle: "<<d.area(10,3.3,0)<<endl;
-    return 0;
-}
+
+    int main(){
+
+        Concat c;
+        
+        cout<<"Concatenated String is: "<<c.Concatenate("Papri", "Sen")<<endl;
+        cout<<"Concatenated Characters are: "<<c.Concatenate("P", "S")<<endl;
+
+        return 0;
+    }
+
 /*
 Output:
-Area of Sq: 10.89
-Area of Circle: 34.1946
-Area of Rectangle: 2.64
-Area of Triangle: 16.5
+Concatenated String is: PapriSen
+Concatenated Characters are: PS
 */
